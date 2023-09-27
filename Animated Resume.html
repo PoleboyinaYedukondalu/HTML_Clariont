@@ -1,0 +1,376 @@
+
+<!-- Built My Resume using HTML and CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+<style>
+/*--------------------------- Adding Css to my resume   ----------------------------*\
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dcdbf0; /* Light gray background color */
+    color: #568fea; /* Dark gray text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(253, 254, 255);
+    box-shadow: 0px 0px 10px rgba(4, 4, 4, 0.899);
+    border-radius: 5px solid black;
+}
+
+header {
+    text-align: center;
+    /* animation: fadeInUp 1s ease; */
+}
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    color: #1d1c1c;
+}
+
+.about, .skills, .contact {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #020000;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Define animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* For Education informaation Table */
+
+.education {
+    margin-top: 20px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.education-item  h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.education-item  p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Styling for project section */
+
+.projects {
+    margin-top: 20px;
+}
+
+.project-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Styling for certification section */
+
+.certifications {
+    margin-top: 20px;
+}
+
+.certification-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.certification-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.certification-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+/* Styling For Hobbies Section */
+
+.hobbies {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: square;
+    font-size: 16px;
+    color: #555;
+    padding-left: 20px;
+}
+
+/* Styling for Personality Traits */
+
+.personality-traits {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    font-size: 16px;
+    color: #555;
+    padding-left: 20px;
+}
+
+/* For styling declaration section */
+
+.declaration {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Styling for footer section */
+
+footer {
+    margin-top: 20px;
+    text-align: right;
+}
+.place-date p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align:left;
+    margin-bottom: 15px;
+}
+
+</style>
+
+</head>
+<body>
+    <!-- taking div tag for all the code  -->
+    <div class="container">
+      <!-- header section contain name and image    -->
+        <header>
+            <div class="profile-picture">
+                <img src="https://media.licdn.com/dms/image/D5603AQF9pZcGzH9bxQ/profile-displayphoto-shrink_400_400/0/1695496880297?e=1700697600&v=beta&t=0s4FJ6t4Z8QjX1illWlX8KXIdTjLbEpgxae_u_1SZvA" alt="Profile Photo">
+                <!-- <img src="/html/images/WhatsApp Image 2023-09-23 at 23.56-PhotoRoom (1).jpg" alt="Profile Photo"> -->
+            </div>
+            <h1>Poleboyina Yedukondalu</h1>
+            <p>BSC Computers & Statistics</p>
+        </header>
+        <!-- about section conatin about me  -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am a recent graduate with a passion for Software Developer. I am eager to learn and contribute to innovative projects.</p>
+        </section>
+        <!-- contact section contain contact information  -->
+        <section class="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: Poleboyinayedukondalu@gmail.com</li>
+                <li>Phone: 9912542198</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/poleboyina-yedukondalu">linkedin.com/Yedukondalu</a></li>
+                <li>GitHub: <a href="https://github.com/PoleboyinaYedukondalu">github.com/Yedukondalu</a></li>
+            </ul>
+        </section>
+    <!-- Skills section contain skills information -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Django</li>
+            </ul>
+        </section>
+        <!-- education section contain education information -->
+        <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bsc Computers & Statistics</h3>
+                <p>Acharya Nagarjuna University</p>
+                <p>Graduated: Aug 2022</p>
+                <p>Grade : 8.4</p>
+            </div>
+            <div class="education-item">
+                <h3>Intermediate</h3>
+                <p>Sri Gowthami Junior College</p>
+                <p>Passed Out: May 2019</p>
+                <p>Grade : 8.2</p>
+            </div>
+            <div class="education-item">
+                <h3>SSC</h3>
+                <p>Viswa Spandhana High School </p>
+                <p>Passed Out: June 2019</p>
+                <p>Grade : 7.7</p>
+            </div>
+        </section>
+
+        <!-- project section contain project information -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>REGISTRATION AND LOGIN SYSTEM</h3>
+                <p>A Registration And Login System website built using Pyhton,Sql,Django,HTML,And Css.</p>
+            </div>
+        </section>
+
+        <!-- certification section contain certification details -->
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <div class="certification-item">
+                <h3>Python Basic Certification </h3>
+                <p>Issued by Hacker Rank</p>
+                <p>Date of Issue: 18th Feb 2023</p>
+            </div>
+            <div class="certification-item">
+                <h3>Python With Django</h3>
+                <p>Issued by Nipuna Technologies</p>
+                <p>Date of Issue: March 2022</p>
+            </div>
+        </section>
+
+        <!-- hobbies section contain hobbies information -->
+        <section class="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Listening Music</li>
+                <li>Playing Games</li>
+                <li>Browsing Internet</li>
+                <li>Cooking</li>
+            </ul>
+        </section>
+
+        <!-- personality traints contains personal skills -->
+        <section class="personality-traits">
+            <h2>Personality Traits</h2>
+            <ul>
+                <li>Decision Meking</li>
+                <li>Team Player</li>
+                <li>Self-Motivated</li>
+                <li>Team Management</li>
+            </ul>
+        </section>
+
+        <!-- declaration section contain declaration part -->
+        <section class="declaration">
+            <h2>Declaration</h2>
+            <p>I hereby declare that the information provided above is true to the best of my knowledge and belief. I am committed to contributing my skills and knowledge to excel in my career and to be an asset to any organization I become a part of.</p>
+        </section>
+       <!-- footer section contains place,date and signature  -->
+       <footer>
+        <div class="place-date">
+            <p>Place: </p>
+            <p>Date:  <p style="text-align: right; margin-right: 50px;">Signature:</p></p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
