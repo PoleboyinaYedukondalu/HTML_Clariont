@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Forms</title>
+    <style>
+    body{
+        background-color: azure;
+    }
+    .Forms{
+        margin-top: 40px;
+        margin-bottom: 150px;
+    }
+    .Login-form{
+        border: 2px solid black;
+        height: 50%;
+        width: 60%;
+        text-align: center;
+        margin-left: 250px;
+        margin-right: 250px;
+        background-color: aqua;
+        
+
+    }
+    button{
+        margin-top: 5px;
+        padding: 4px;
+        width: 70px;
+
+    }
+    label,input,button{
+        margin-top: 30px;
+    }
+    .Register-form{
+        border: 2px solid black;
+        height: 50%;
+        width: 60%;
+        text-align: center;
+        margin-left: 250px;
+        margin-right: 250px;
+        background-color: aqua;
+    }
+    tr{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Example Forms</h1>
+    <div class="Forms">
+    <div class="Login-form">
+        <h2>Log In Form</h2>
+        <form action="" name="">
+            <label for="username">username :</label>
+            <input type="text" name="username" value=""><br>
+
+            <label for="password">Password :</label>
+            <input type="password" name="password" value=""><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="Register-form">
+        <h2>Registration Form</h2>
+        <form action="" name="">
+            <table>
+                <tr>
+           <td><label for="Firstr Name">First Name :</label>
+            <input type="text" name="First Name" value="">
+           </td>
+           <td>
+            <label for="Last Name">Last Name :</label>
+            <input type="text" name="Last Name" value="">
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <label for="Last Name">mobile No :</label>
+            <input type="number" name="Phone Number" value="">
+            </td>
+            <td>
+            <label for="email">Email :</label>
+            <input type="text" name="Email" value="">
+            </td>
+            </tr>
+            <tr style="padding: 5px;">
+                <td>
+                <label for="gender">Gender :</label>
+                <label for="male">male</label><input type="checkbox" value="checkbox">
+                <label for="female">female</label><input type="checkbox" value="checkbox">
+                <label for="others">Others</label><input type="checkbox" value="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" value="submit">submit</button></td>
+            </tr>
+            </table>
+        </form>
+
+    </div>
+  
+    </div>
+    
+       
+      
+</body>
+</html>
