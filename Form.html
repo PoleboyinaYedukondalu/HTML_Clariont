@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url(/html/images/Abstract\ blue\ technology\ concept\ vector\ image\ on\ VectorStock.jpeg);
+            background-size: cover;
+            align-items: center; 
+
+        }
+        .form-div{
+            border: 3px solid black;
+            background: transparent;
+            backdrop-filter:blur(20px);
+            width: 420px;
+            margin: 320px;
+            padding: 30px 40px;
+            border-radius: 20px;
+            
+
+
+        }
+        label, input, button {
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        label{
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+        button{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            border-radius:10px black ;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        button:hover{
+            color: black;
+            background-color: rgb(57, 199, 76);
+            border-radius: 5px;
+        }
+        input{
+           border-radius: 3px black;
+           border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- main div for form -->
+    <div class="form-div">
+        <!-- form tag -->
+        <form action="">
+            <h1>Login Form</h1>
+            <label for="Username">Username :</label>
+            <input type="text" id="Uname" placeholder="Username" required> <br>
+
+            <label for="password">password :</label>
+            <input type="password" id="Psw" placeholder="password" required><br>
+
+        <!-- Drop Down list -->
+            <label for="Gender">Gender :</label>
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+        <!-- Remenber checkbox -->
+            <label class="checkbox"><input id="remember" type="checkbox">remember me</label><br>
+
+
+            <button type="button" id="btn" value="button">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>
